@@ -1,0 +1,19 @@
+<p>亲爱的 {{ user.username }},</p>
+
+<p>欢迎来到这里!</p>
+
+<p>确认账户:
+
+<a href="{{ url_for('auth.confirm', token=token, _external=True) }}">点击这里</a>
+
+</p>
+
+<p>你也可以复制下面的地址登录确认:</p>
+
+<p>{{ url_for('auth.confirm', token=token, _external=True) }}</p>
+
+<p>谢谢,</p> 
+
+<p>小马</p>
+
+<p>提示: 无需回复此邮件.</p>
